@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Movie.css';
 import {Link} from 'react-router-dom';
 
-function Movie({id, title, year, summary, poster, genres}) {
+function Movie({title, year, summary, poster, genres}) {
     return (
         <div className='movie'>
             <Link to="/movie-detail" state={{ year, title, summary, poster, genres }}>
